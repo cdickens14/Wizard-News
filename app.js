@@ -76,7 +76,7 @@ app.get('/posts/:id', (req, res, next) => {
 
 app.use(express.static('public'));
 
-const PORT = process.evn.PORT || 1337;
+const PORT = process.env.PORT || 1337;
 
 app.listen(PORT, () => {
   console.log(`App listening in port ${PORT}`);
